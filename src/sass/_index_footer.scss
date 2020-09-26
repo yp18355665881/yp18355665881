@@ -1,0 +1,16 @@
+@charset "utf-8";
+
+.about{
+    @include flexSet();
+    @include div(red,100%,298px);
+}
+
+.yqlj{
+    @include flexSet();
+    @include div(gold,100%,40px)
+}
+
+.footer{
+    @include flexSet();
+    @include div(green,100%,140px)
+}
