@@ -338,7 +338,7 @@ a {
   height: 306px;
   position: relative;
 }
-.lunbotu .main .left li {
+.lunbotu .main .left .ul_list {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -363,18 +363,26 @@ a {
   width: 1px;
   height: 10px;
 }
-.lunbotu .main .left .two {
-  background-color: transparent;
+.lunbotu .main .left .two_wrap {
+  background-color: white;
   width: 385px;
   height: 305px;
   position: absolute;
-  border: 1px solid #ccc;
-  padding-left: 13px;
-  left: 150px;
+  z-index: 10;
+  margin-left: 0px;
+  left: 136px;
   top: 0;
+  display: none;
+}
+.lunbotu .main .left .two {
+  background-color: white;
+  width: 385px;
+  height: 305px;
+  border: 1px solid #ccc;
+  margin-left: 13px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
 }
 .lunbotu .main .left .two_left {
@@ -448,6 +456,67 @@ a {
   background-color: transparent;
   width: 951px;
   height: 304px;
+  position: relative;
+}
+.lunbotu .main .right_left .yq {
+  background-color: transparent;
+  width: 100px;
+  height: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  position: absolute;
+  top: 268px;
+  left: 50%;
+  margin-left: -50px;
+  bottom: 20px;
+}
+.lunbotu .main .right_left .yq b {
+  background-color: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+}
+.lunbotu .main .right_left .yq .active {
+  background-color: red;
+}
+.lunbotu .main .banner_ul {
+  background-color: transparent;
+  width: 951px;
+  height: 304px;
+  overflow: hidden;
+}
+.lunbotu .main .banner_ul li {
+  float: left;
+}
+.lunbotu .main .banner_ul img {
+  background-color: transparent;
+  width: 951px;
+  height: 304px;
+}
+.lunbotu .main .banner_ul .banner_inner_ul {
+  background-color: red;
+  width: 138px;
+  height: 304px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.lunbotu .main .banner_ul .banner_inner_ul li {
+  background-color: blue;
+  width: 137px;
+  height: 147px;
+}
+.lunbotu .main .banner_ul .banner_inner_ul img {
+  background-color: blue;
+  width: 137px;
+  height: 147px;
 }
 .lunbotu .main .right_right {
   background-color: transparent;
@@ -569,9 +638,91 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: gold;
+  background-color: transparent;
   width: 100%;
   height: 407px;
+}
+.ppjx .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: transparent;
+  width: 1200px;
+  height: 407px;
+}
+.ppjx .main .ppjx_top {
+  background-color: transparent;
+  width: 1200px;
+  height: 44px;
+  border-bottom: 1px solid red;
+}
+.ppjx .main .ppjx_middle {
+  background-color: transparent;
+  width: 1200px;
+  height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.ppjx .main .ppjx_middle .img-3 {
+  background-color: transparent;
+  width: 392px;
+  height: 200px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+.ppjx .main .ppjx_middle .img-3 a {
+  display: block;
+  background-color: transparent;
+  width: 392px;
+  height: 200px;
+}
+.ppjx .main .ppjx_middle .img-3 img {
+  display: block;
+  background-color: transparent;
+  width: 392px;
+  height: 200px;
+}
+.ppjx .main .ppjx_middle .img-3 .img-3-bottom {
+  background-color: #ccc;
+  width: 392px;
+  height: 25px;
+  position: absolute;
+  opacity: 0.5;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.ppjx .main .ppjx_middle .img-3:hover {
+  box-shadow: #ccc 0px 0px 5px 5px;
+}
+.ppjx .main .ppjx_bottom {
+  background-color: transparent;
+  width: 1200px;
+  height: 120px;
+}
+.ppjx .main .ppjx_bottom ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.ppjx .main .ppjx_bottom li {
+  flex: 0 0 10%;
+}
+.ppjx .main .ppjx_bottom li a {
+  display: block;
+}
+.ppjx .main .ppjx_bottom li a img {
+  background-color: transparent;
+  width: 120px;
+  height: 60px;
 }
 
 .xsms {
@@ -579,9 +730,57 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: skyblue;
+  background-color: transparent;
   width: 100%;
   height: 300px;
+}
+.xsms .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 1200px;
+  height: 300px;
+  overflow: hidden;
+}
+.xsms .main .xsms_top {
+  background-color: transparent;
+  width: 1200px;
+  height: 36px;
+}
+.xsms .main .xsms_bottom {
+  background-color: transparent;
+  width: 1200px;
+  height: 36px;
+}
+.xsms .main .xsms_bottom ul {
+  background-color: transparent;
+  width: 30856px;
+  height: 250px;
+}
+.xsms .main .xsms_bottom ul li {
+  background-color: transparent;
+  width: 185px;
+  height: 250px;
+  border: 1px solid #ccc;
+  float: left;
+  margin-right: 18px;
+}
+.xsms .main .xsms_bottom ul a {
+  display: block;
+  background-color: transparent;
+  width: 185px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+.xsms .main .xsms_bottom ul img {
+  background-color: transparent;
+  width: 185px;
+  height: 185px;
 }
 
 .rxtj {
@@ -589,9 +788,51 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: green;
+  background-color: transparent;
   width: 100%;
   height: 199.8px;
+}
+.rxtj .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 1200px;
+  height: 199.8px;
+}
+.rxtj .main .rxtj_top {
+  background-color: transparent;
+  width: 1200px;
+  height: 40.8px;
+}
+.rxtj .main .rxtj_bottom {
+  background-color: transparent;
+  width: 1200px;
+  height: 159px;
+}
+.rxtj .main .rxtj_bottom ul {
+  background-color: transparent;
+  width: 1200px;
+  height: 159px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.rxtj .main .rxtj_bottom ul li {
+  background-color: transparent;
+  width: 232px;
+  height: 159px;
+  border: 1px solid #ccc;
+}
+.rxtj .main .rxtj_bottom ul li a {
+  display: block;
+}
+.rxtj .main .rxtj_bottom ul li img {
+  background-color: transparent;
+  width: 232px;
+  height: 159px;
 }
 
 .jrgx {
@@ -599,9 +840,63 @@ a {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: gold;
+  background-color: transparent;
   width: 100%;
-  height: 200px;
+  height: auto;
+}
+.jrgx .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 1200px;
+  height: auto;
+}
+.jrgx .main .jrgx_top {
+  background-color: transparent;
+  width: 1200px;
+  height: 40.8px;
+}
+.jrgx .main .jrgx_bottom {
+  background-color: transparent;
+  width: 1200px;
+  height: auto;
+}
+.jrgx .main .jrgx_bottom ul {
+  background-color: transparent;
+  width: 1200px;
+  height: auto;
+}
+.jrgx .main .jrgx_bottom ul li {
+  border: 1px solid #ccc;
+  float: left;
+  margin: 0 11px 30px 11px;
+}
+.jrgx .main .jrgx_bottom ul a {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  display: block;
+}
+.jrgx .main .jrgx_bottom ul img {
+  display: block;
+  background-color: transparent;
+  width: 278px;
+  height: 283px;
+}
+.jrgx .main .jrgx_bottom ul div {
+  background-color: transparent;
+  width: 278px;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.jrgx .main .jrgx_bottom ul li:nth-child(4n) {
+  margin-right: 0;
 }
 
 .about {

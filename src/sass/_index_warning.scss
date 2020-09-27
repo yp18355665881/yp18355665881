@@ -206,7 +206,7 @@
                 @include div(transparent,138px,306px);  
                 position: relative;
             }
-            li{
+            .ul_list{
                 @include flexSet(row,space-around,center);
                 @include div(transparent,136px,30px);
                 border-bottom: 1px solid #ccc;
@@ -224,14 +224,21 @@
             .l-list span {
                 @include div(black,1px,10px)
             }
-            .two{ //两级菜单
-               @include div(transparent,385px,305px);
-               position: absolute;
-               border: 1px solid #ccc;
-               padding-left:13px ;
-               left: 150px;
+            .two_wrap{
+                @include div(white,385px,305px);
+                position: absolute;
+                z-index: 10;
+                margin-left: 0px;
+               left: 136px;
                top: 0;
-               @include flexSet(row,space-evenly,center);
+                display: none;
+            }
+            .two{ //两级菜单
+               @include div(white,385px,305px);
+               border: 1px solid #ccc;
+               margin-left:13px ;
+               @include flexSet(row,space-between,center);
+            //    display: none;
             }
             .two_left{
                 @include div(transparent,197px,305px);
@@ -275,7 +282,49 @@
         }
         .right_left{
             @include div(transparent,951px,304px);
+            position: relative;
+            .yq{
+                @include div(transparent,100px,16px);
+                @include flexSet(row,space-evenly,center);
+                position: absolute;
+                top: 268px;
+                left: 50%;
+                margin-left: -50px;
+                bottom: 20px;
+                b{
+                    @include div(white,15px,15px);  
+                    border-radius: 50%;
+                    border: 1px solid #ccc;
+                }
+                .active{
+                    background-color: red;
+                }
+            }
         }
+        .banner_ul{
+            @include div(transparent,951px,304px);
+            overflow: hidden;
+            li{
+                float: left;
+            }
+            img{
+                @include div(transparent,951px,304px); 
+            }
+            .banner_inner_ul{
+                @include div(red,138px,304px); 
+                position: absolute;
+                top: 0;
+                right:0;
+                @include flexSet(column,space-evenly,center);
+                li{
+                    @include div(blue,137px,147px); 
+                }
+                img{
+                    @include div(blue,137px,147px);  
+                }
+            }
+        }
+
         .right_right{
             @include div(transparent,98px,304px);
             @include flexSet(column,space-evenly,center);
