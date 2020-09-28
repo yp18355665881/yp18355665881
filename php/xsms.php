@@ -1,6 +1,6 @@
 <?php
     include 'conn.php';
-    $result = $conn ->query('select * from taobaogoods');//查询到的是一个个结果集
+    $result = $conn ->query('select * from xsms');//查询到的是一个个结果集
     // echo $result ->num_rows;
     // print_r($result ->fetch_assoc());
     $arrdata = array();

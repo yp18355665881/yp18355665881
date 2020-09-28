@@ -1,4 +1,48 @@
 @charset "utf-8";
+//顶部悬浮
+.dbxf{
+    @include flexSet(column,flex-start,flex-start);
+    @include div(transparent,100%,80px);
+    position: fixed;
+    top: -80px;
+    left: 0;
+    z-index: 20 ;
+    // .xx{
+    //     @include flexSet(row,center,center);
+    // }
+    .dbxf_top{
+        @include flexSet(row,center,center);
+        @include div(red,100%,40px);
+        border-bottom:2px solid red ;
+        .main{
+            @include flexSet(row,space-between,center);
+            .dbxf_top_left{
+                @include div(green,618.850px,40px);
+                @include flexSet(row,flex-start,center);
+                a{
+                    @include div(red,100%,28px); 
+                    font-size: 14px;
+                }
+            }
+            .dbxf_top_right{
+                @include div(purple,206px,30.2px); 
+            }
+        }
+    }
+    .dbxf_bottom{
+        @include div(blue,100%,40px);
+        .main{
+            @include flexSet(row,flex-start,center); 
+            .dbxf_bottom_left{
+                @include div(gold,1200px,40px);
+            }
+        }
+    }
+    .main{
+        @include div(gold,1200px,40px); 
+    }
+}
+
 /* 品牌精选部分*/
 .ppjx{
     @include flexSet();
@@ -37,6 +81,9 @@
             .img-3:hover{
                 box-shadow: #ccc 0px 0px 5px 5px;
             }
+            // .ppjx_bottom img :hover{
+            //     box-shadow: #ccc 0px 0px 5px 5px;
+            // }
         }
         .ppjx_bottom{
             @include div(transparent,1200px,120px);
@@ -72,15 +119,25 @@
             @include div(transparent,1200px,36px); 
         }
         .xsms_bottom{
-            @include div(transparent,1200px,36px); 
+            @include div(transparent,1200px,250px); 
+            position: relative;
             ul{
                 @include div(transparent,30856px,250px); 
+                position: absolute;
+                top: 0;
+                left: 0;
                 li{
                     @include div(transparent,185px,250px);
                     border: 1px solid #ccc;
                     float: left;
                     margin-right:18px ; 
                 } 
+                li:hover{
+                    box-shadow: #ccc 0px 0px 5px 5px;
+                }
+                li:nth-child(6n){
+                    margin-right:0px ;  
+                }
                 a{
                     display: block;
                     @include div(transparent,185px,250px);
@@ -90,6 +147,28 @@
                     @include div(transparent,185px,185px);      
                 }
             }
+        }
+        .jiantou{
+            @include div(blue,17px,43px);
+            position: absolute;
+            top:85px;
+            z-index: 3;
+            background: url(../img/big_bg_img_v3.png) ;
+            opacity: 0.5;
+        }
+        .xsms_left{
+            left: 0px;
+            background-position: -277px -440px;
+        }
+        .xsms_left:hover{
+            opacity: 1;
+        }
+        .xsms_right{
+            right: 0px;
+            background-position:-307px -440px;
+        }
+        .xsms_right:hover{
+            opacity: 1;
         }
     }
 }
@@ -120,6 +199,9 @@
                         @include div(transparent,232px,159px);       
                     }
                 } 
+                li:hover{
+                    box-shadow: #ccc 0px 0px 5px 5px;
+                }
             }
         }
     }
@@ -145,9 +227,11 @@
                     float: left;
                     margin: 0 11px 30px 11px;
                 } 
+                li:hover{
+                    box-shadow: #ccc 0px 0px 5px 5px;
+                }
                 a{
                     @include flexSet(column,flex-start,flex-start);
-                    display: block;
                 }
                 img{
                     display: block;

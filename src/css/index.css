@@ -458,6 +458,28 @@ a {
   height: 304px;
   position: relative;
 }
+.lunbotu .main .right_left .banner_ul {
+  background-color: transparent;
+  width: 951px;
+  height: 304px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.lunbotu .main .right_left .banner_li {
+  background-color: transparent;
+  width: 951px;
+  height: 304px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.lunbotu .main .right_left .banner_li:first-child {
+  opacity: 1;
+  z-index: 1;
+}
 .lunbotu .main .right_left .yq {
   background-color: transparent;
   width: 100px;
@@ -469,6 +491,7 @@ a {
   position: absolute;
   top: 268px;
   left: 50%;
+  z-index: 10;
   margin-left: -50px;
   bottom: 20px;
 }
@@ -482,21 +505,7 @@ a {
 .lunbotu .main .right_left .yq .active {
   background-color: red;
 }
-.lunbotu .main .banner_ul {
-  background-color: transparent;
-  width: 951px;
-  height: 304px;
-  overflow: hidden;
-}
-.lunbotu .main .banner_ul li {
-  float: left;
-}
-.lunbotu .main .banner_ul img {
-  background-color: transparent;
-  width: 951px;
-  height: 304px;
-}
-.lunbotu .main .banner_ul .banner_inner_ul {
+.lunbotu .main .banner_inner_ul {
   background-color: red;
   width: 138px;
   height: 304px;
@@ -508,12 +517,12 @@ a {
   justify-content: space-evenly;
   align-items: center;
 }
-.lunbotu .main .banner_ul .banner_inner_ul li {
+.lunbotu .main .banner_inner_ul li {
   background-color: blue;
   width: 137px;
   height: 147px;
 }
-.lunbotu .main .banner_ul .banner_inner_ul img {
+.lunbotu .main .banner_inner_ul img {
   background-color: blue;
   width: 137px;
   height: 147px;
@@ -630,6 +639,77 @@ a {
   align-items: center;
   color: #ff404c;
   font-size: 12px;
+}
+
+.dbxf {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: transparent;
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  top: -80px;
+  left: 0;
+  z-index: 20;
+}
+.dbxf .dbxf_top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: red;
+  width: 100%;
+  height: 40px;
+  border-bottom: 2px solid red;
+}
+.dbxf .dbxf_top .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.dbxf .dbxf_top .main .dbxf_top_left {
+  background-color: green;
+  width: 618.85px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dbxf .dbxf_top .main .dbxf_top_left a {
+  background-color: red;
+  width: 100%;
+  height: 28px;
+  font-size: 14px;
+}
+.dbxf .dbxf_top .main .dbxf_top_right {
+  background-color: purple;
+  width: 206px;
+  height: 30.2px;
+}
+.dbxf .dbxf_bottom {
+  background-color: blue;
+  width: 100%;
+  height: 40px;
+}
+.dbxf .dbxf_bottom .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.dbxf .dbxf_bottom .main .dbxf_bottom_left {
+  background-color: gold;
+  width: 1200px;
+  height: 40px;
+}
+.dbxf .main {
+  background-color: gold;
+  width: 1200px;
+  height: 40px;
 }
 
 /* 品牌精选部分*/
@@ -752,12 +832,16 @@ a {
 .xsms .main .xsms_bottom {
   background-color: transparent;
   width: 1200px;
-  height: 36px;
+  height: 250px;
+  position: relative;
 }
 .xsms .main .xsms_bottom ul {
   background-color: transparent;
   width: 30856px;
   height: 250px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .xsms .main .xsms_bottom ul li {
   background-color: transparent;
@@ -766,6 +850,12 @@ a {
   border: 1px solid #ccc;
   float: left;
   margin-right: 18px;
+}
+.xsms .main .xsms_bottom ul li:hover {
+  box-shadow: #ccc 0px 0px 5px 5px;
+}
+.xsms .main .xsms_bottom ul li:nth-child(6n) {
+  margin-right: 0px;
 }
 .xsms .main .xsms_bottom ul a {
   display: block;
@@ -781,6 +871,30 @@ a {
   background-color: transparent;
   width: 185px;
   height: 185px;
+}
+.xsms .main .jiantou {
+  background-color: blue;
+  width: 17px;
+  height: 43px;
+  position: absolute;
+  top: 85px;
+  z-index: 3;
+  background: url(../img/big_bg_img_v3.png);
+  opacity: 0.5;
+}
+.xsms .main .xsms_left {
+  left: 0px;
+  background-position: -277px -440px;
+}
+.xsms .main .xsms_left:hover {
+  opacity: 1;
+}
+.xsms .main .xsms_right {
+  right: 0px;
+  background-position: -307px -440px;
+}
+.xsms .main .xsms_right:hover {
+  opacity: 1;
 }
 
 .rxtj {
@@ -834,6 +948,9 @@ a {
   width: 232px;
   height: 159px;
 }
+.rxtj .main .rxtj_bottom ul li:hover {
+  box-shadow: #ccc 0px 0px 5px 5px;
+}
 
 .jrgx {
   display: flex;
@@ -873,12 +990,14 @@ a {
   float: left;
   margin: 0 11px 30px 11px;
 }
+.jrgx .main .jrgx_bottom ul li:hover {
+  box-shadow: #ccc 0px 0px 5px 5px;
+}
 .jrgx .main .jrgx_bottom ul a {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  display: block;
 }
 .jrgx .main .jrgx_bottom ul img {
   display: block;
