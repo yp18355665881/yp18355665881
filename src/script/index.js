@@ -99,11 +99,37 @@
             })
 }();
 
-//边框效果
+//跳转进入列表页
 !function(){
-    console.log($('.img-3').size())
-   
+    
+        // $('.pop_second').on('mouseover',function(){
+        //     // alert(1)
+        //     $(this).css('cursor','pointer')
+        //     $('.pop_second').on('click',function(){
+        //         $(window).attr('href','list.html')
+        //     })
+        //     // $(window).location.href = 'list.html';
+        //     // $(this).css({
+        //     //     cursor: pointer
+        //     // }
+        // })
+        let pop = document.querySelector('.pop_second');
+        pop.onmouseover = function(){
+            pop.style.cursor = 'pointer';
+            pop.onclick = function(){
+                window.location.href = 'list.html'
+            }
+            
+        }
+        
+    
 }()
+
+
+
+
+//边框效果
+
 
 !function(){
     $.ajax({

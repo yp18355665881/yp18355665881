@@ -1,0 +1,53 @@
+@charset "utf-8";
+
+.sort{
+    width: 1200px;
+    height: 38px; 
+    display:flex; 
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
+    button{
+        @include div(transparent,60px,36px);
+        outline: none;
+        border: 0;
+        cursor: pointer;
+    }
+   .active{
+       background-color: red;
+       color: white;
+   } 
+}
+
+.list {
+    width: 1160px;
+    margin: 0 auto;
+    font-size: 14px;
+}
+
+.list li {
+    width: 200px;
+    padding: 10px;
+    float: left;
+    margin: 0 10px 10px 0;
+    border: 1px solid #ccc;
+    height: 310px;
+    position: relative;
+}
+
+.list li p {
+    width: 178px;
+    height: 48px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+.list li img {
+    width: 178px;
+    height: 200px;
+    display: block;
+}
+
+.list li span {
+   display: block;
+}

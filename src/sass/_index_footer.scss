@@ -14,3 +14,52 @@
     @include flexSet();
     @include div(green,100%,140px)
 }
+
+#right_nav{
+    @include div(gold,34px,100%) ;
+    position:fixed;
+    right: 0;
+    top: 0;
+    z-index: 10000;
+    .gwc{
+        @include div(red,34px,133px);
+        top: 28px !important;
+    }
+    .right{
+        position: absolute;
+        left: 0;
+    }
+    .size{
+        @include div(red,34px,42px);
+    }
+    .dd{
+        top: 161px;
+    }
+    .yh{
+        top: 203px;
+    }
+    .sc{
+        top: 245px;
+    }
+    .xx{
+        top:287px;
+    }
+    .lq{
+        bottom: 210px;
+    }
+    .pp{
+        bottom: 168px;
+    }
+    .sys{
+        bottom: 126px;
+    }
+    .wt{
+        bottom: 84px;
+    }
+    .fk{
+        bottom: 42px;
+    }
+    .top{
+        bottom: 0px;
+    }
+}
