@@ -1,7 +1,9 @@
 ;
 !function(){
     $.ajax({
-        url:'http://192.168.13.66/projectname/php/listdata.php',
+        url:'http://localhost/h5-2/zhe800/php/listdata.php',
+
+        // url:'http://192.168.13.22/h5-2/zhe800/php/listdata.php',
         dataType:'json'
     }).done(function(data){
         let str = '<ul>';
@@ -45,7 +47,9 @@
         callback: function(api) {
             console.log(api.getCurrent()); //获取的页码给后端
             $.ajax({
-                url: 'http://192.168.13.66/projectname/php/listdata.php',
+                // url: 'http://192.168.13.22/h5-2/zhe800/php/listdata.php',
+                url: 'http://localhost/h5-2/zhe800/php/listdata.php.',
+
                 data: {
                     page: api.getCurrent() //传输页面
                 },

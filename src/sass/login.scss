@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+@mixin flexSet($fd:row,$jc:center,$ai:center ){// 弹性盒设置 混合
+    display:flex; //设置成弹性盒
+    flex-direction:$fd;  //设置子元素主轴排列方式
+    justify-content:$jc; //设置子元素的对齐方式
+    align-items:$ai; //设置子元素在侧轴的对齐方式
+}
+
+@mixin div($color,$width,$height) {
+    background-color:$color;
+    width: $width;
+    height: $height;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #f6f6f6;
+}
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{//将网站整体设置成弹性盒
+    @include flexSet(column,center,center);
+}
+
+@import "registry_header" ;
+@import "login_main";
+@import "Index_footer";

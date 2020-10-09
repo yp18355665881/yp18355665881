@@ -1,7 +1,5 @@
 <?php
 include "conn.php";
-
-//解决跨域
 header('Access-Control-Allow-Origin:*');
 header('Access-Control-Allow-Method:POST,GET');
 
@@ -32,16 +30,12 @@ $page = ($pagevalue - 1) * $pagesize;
 //limit 10,10  从偏移量10开始 取10条
 //limit 20,10 从偏移量20开始 取10条
 
-$sql1 = "select * from taobaogoods limit $page,$pagesize";
+$sql1 = "select * from goodslist limit $page,$pagesize";
 $res = $conn->query($sql1);
 
-
-//通过二维数组输出
-// $result->num_rows; //记录集的条数
-// $result->fetch_assoc(); //逐条获取记录集的值，结果是数组。
 $arr = array();
 for ($i = 0; $i < $res->num_rows; $i++) {
     $arr[$i] = $res->fetch_assoc();
 }
-echo json_encode($arr);//输出接口
+echo json_encode($arr);//输出接口/
 

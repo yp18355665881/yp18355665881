@@ -34,8 +34,8 @@ a{
 .container{//将网站整体设置成弹性盒
     @include flexSet(column,center,center);
 }
-@import "index_warning" ;
+@import "index_header" ;
 @import "index_main";
-@import "Index_footer"
+@import "Index_footer";
 
 

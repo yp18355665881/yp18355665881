@@ -4,11 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>折800通行证</title>
+    <link rel="stylesheet" href="./css/registry.css">
 </head>
 
 <body>
-    这里就是首页
-</body>
+    <div class="container">
+        <div id="header">
+            <div class="main">
+                <a href="#" class="logo"></a>
+                <span class="header_right">已经有团800或折800帐号了？
+                    <a href="login.html">去登陆</a>
+                </span>
+            </div>
+        </div>
+        <div id="content">
+            <div class="main">
+                <form class="regisry" action="http://192.168.13.22//h5-2/zhe800/php/registry.php" method="POST">
+                    <div class="item  phone">
+                        <label for="">手机号:</label>
+                        <input type="text" name="username" id="phone" value="">
+                        <em></em>
+                        <div class="info"></div>
+                    </div>
+                    <div class="item  password">
+                        <label for="">密码:</label>
+                        <input type="password" name="password" id="password">
+                        <em></em>
+                        <div class="info"></div>
+                    </div>
+                    <div class="item apassword">
+                        <label for="">确认密码:</label>
+                        <input type="text" name="apassword" id="apassword">
+                        <em></em>
+                        <div class="info"></div>
+                    </div>
+                    <div class="item  ">
+                        <label for=""></label>
+                        <p > 
+                            <input type="checkbox" name="" id="" class="select">
+                            我已阅读并接受折800的《用户服务协议》</p>
+                    </div>
+                    <div class="item  ">
+                        <label for=""></label>
+                        <input  type ='submit' value="同意协议并注册" id="btn" name="submit"> 
+                        
+                    </div>
+                    <div class="item  "></div>
+                </form>
 
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script/jquery.js"></script>
+<script src="./script/regisrty.js"></script>
 </html>

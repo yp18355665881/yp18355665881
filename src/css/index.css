@@ -1018,38 +1018,30 @@ a {
   margin-right: 0;
 }
 
-.about {
+#footer {
+  background-color: transparent;
+  width: 100%;
+  height: 480px;
+  border-top: 3px solid red;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: red;
-  width: 100%;
-  height: 298px;
 }
-
-.yqlj {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: gold;
-  width: 100%;
-  height: 40px;
+#footer .main {
+  margin-top: 5px;
+  background-color: transparent;
+  width: 1200px;
+  height: 480px;
 }
-
-.footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: green;
+#footer .main img {
+  background-color: transparent;
   width: 100%;
-  height: 140px;
+  height: 480px;
 }
 
 #right_nav {
-  background-color: gold;
+  background-color: black;
   width: 34px;
   height: 100%;
   position: fixed;
@@ -1058,14 +1050,21 @@ a {
   z-index: 10000;
 }
 #right_nav .gwc {
-  background-color: red;
+  background-color: transparent;
   width: 34px;
   height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   top: 28px !important;
+  padding: 0 10px;
+  color: white;
 }
 #right_nav .right {
   position: absolute;
   left: 0;
+  font-size: 12px;
 }
 #right_nav .size {
   background-color: red;
@@ -1074,12 +1073,15 @@ a {
 }
 #right_nav .dd {
   top: 161px;
+  background: url(http://z5.tuanimg.com/v2/core/img/side_golds.png) no-repeat 6px -188px;
 }
 #right_nav .yh {
   top: 203px;
+  background: url(//z5.tuanimg.com/v2/core/img/quan_iconnew.png) no-repeat 7px 0;
 }
 #right_nav .sc {
   top: 245px;
+  background: url(//z5.tuanimg.com/v2/core/img/myFavorites.png) no-repeat 1px 0;
 }
 #right_nav .xx {
   top: 287px;

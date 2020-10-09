@@ -1,0 +1,20 @@
+#header{
+    @include flexSet();
+    @include div(transparent,100%,87px);
+    padding-top: 10px;
+    .main{
+        @include div(transparent,980px,57px); 
+        @include flexSet(row,space-between,center);
+    }
+    .logo{
+        @include div(transparent,232px,57px); 
+        background: url(../img/logo_zhe800_new.png) ,no-repeat;
+        background-size: 100%;
+    }
+    .header_right{
+        color: #666;
+        font: 12px '';
+        margin-top:35px ;
+    }
+}
+

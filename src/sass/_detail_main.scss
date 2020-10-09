@@ -1,0 +1,211 @@
+.active a{
+    background: red !important;
+    color: white !important;
+}
+
+.p{
+    @include flexSet(); 
+    @include div(transparent,100%,38px);
+    .main{
+        @include flexSet(row,flex-start,center); 
+        @include div(transparent,1200px,38px)
+    }
+    .title{
+        // display: block;
+        // @include div(transparent,20px,30px)
+    }
+}
+
+.content{
+    @include flexSet(row,center,flex-start); 
+    @include div(transparent,100%,520px);
+    .main{
+        @include div(transparent,1200px,520px);
+        @include flexSet(row,space-between,flex-start);
+        .left{
+            @include div(transparent,408px,520px);
+            @include flexSet(column,flex-start,flex-start);
+            img{
+                @include div(transparent,400px,400px); 
+                border: 1px solid #ccc;
+            }
+            ul{
+                @include div(transparent,395px,76px);  
+                @include flexSet(row,flex-start,flex-end);
+                overflow: hidden;
+            }
+            .picList{
+                li{
+                    margin-right: 8px;
+                }
+                .cur{
+                    opacity: 1 !important; 
+                    border: 1px solid #ccc;
+                    cursor: pointer;
+                }
+                img{
+                    @include div(transparent,58px,58px); 
+                    opacity: .5; 
+                }
+            }
+        }
+        .right{
+            @include div(transparent,745px,482px);
+            @include flexSet(row,flex-start,flex-start);
+            .right_left{
+                @include div(transparent,549px,482px);
+                @include flexSet(column,flex-start,flex-start);
+                .title{
+                    @include div(transparent,549px,22px);
+                }
+                .price_all{
+                    @include div(#fff6eb,548px,119px);
+                    @include flexSet(column,flex-start,flex-start);
+                    padding: 12px 18px 9px 18px;
+                }
+                .price_l{
+                    @include div(transparent,512px,40px);
+                    font-size: 12px;
+                    @include flexSet(row,flex-start,center);
+                }
+               strong{
+                   color: red;
+                   font-size: 26px;
+               }
+                .price{
+                    color: red;
+                    margin-right: 20px;
+                }
+                .jifen{
+                    @include div(transparent,512px,26.4px);
+                    font-size: 12px;
+                    @include flexSet(row,flex-start,center);
+                }
+                .jf1{
+                    @include div(#ff8a00,44px,16px); 
+                    margin-right: 20px;
+                    border-radius: 3px;
+                    color: white;
+                    @include flexSet(row,center,center); 
+                }
+                .jf2{
+                    @include div(transparent,104px,26px); 
+                    margin-right: 20px;
+                    @include flexSet(row,flex-start,center);  
+                }
+                .youhui{
+                    @include div(transparent,512px,25.6px);
+                    font-size: 12px;
+                    @include flexSet(row,flex-start,center);
+                }
+                .yh1{
+                    @include div(#fe7393,44px,16px); 
+                    margin-right: 20px;
+                    border-radius: 3px;
+                    color: white;
+                    @include flexSet(row,center,center); 
+                }
+                .yh2{
+                    @include div(transparent,104px,26px); 
+                    margin-right: 20px;
+                    color: #fe7393;
+                    @include flexSet(row,flex-start,center); 
+                }
+                .product{
+                    @include div(transparent,548px,186px);
+                    @include flexSet(column,flex-start,flex-start);
+                }
+                .product_t{
+                    @include div(transparent,548px,56px);
+                    margin-bottom: 5px;
+                }
+                .product_t_t{
+                    @include div(transparent,548px,28px);
+                    @include flexSet(row,flex-start,center);
+                    margin-bottom: 5px;
+                }
+                .before{
+                    @include div(transparent,49px,18px);
+                    @include flexSet();
+                    background: url(../img/detail.png) no-repeat 0 0;
+                    font-size: 12px;
+                    color: white;
+                    margin: 0 10px 0 20px;
+                }
+                .after{
+                    font-size: 12px;
+                }
+                .product_b{
+                    @include div(transparent,548px,129px);
+                    @include flexSet(column,flex-start,space-between);
+                }
+
+                .product_b_t{
+                    @include div(transparent,548px,41px);
+                    @include flexSet(row,flex-start,center);
+                }
+                .b_a{
+                    display: block;
+                    @include div(transparent,35px,35px);
+                }
+                .img11{
+                    @include div(transparent,35px,35px);
+                    border: 1px solid #ccc;
+                }
+                .a1{
+                    display: block;
+                    @include div(transparent,40px,24px);
+                    font-size: 12px;
+                    border: 1px solid #ccc;
+                    @include flexSet(row,center,center);
+                }
+                .num{
+                    @include div(transparent,454px,30px);
+                    @include flexSet(row,flex-start,center);
+                }
+                .num_l{
+                    @include div(transparent,104px,30px);
+                    @include flexSet(row,flex-start,center);
+                }
+                .fh{
+                    display: block;
+                    @include div(transparent,26px,28px); 
+                    cursor: pointer; 
+                    background: url(../img/jihao.png) no-repeat 1px -179px;
+                    border: 1px solid #ccc;
+                }
+                .fh_l{
+                   background-position: 1px -179px; 
+                }
+                .fh_r{
+                    background-position: 1px -240px;
+                }
+                .num_count{
+                    @include div(transparent,50px,28px); 
+                    text-indent: 19px;
+                }
+                .num_r{
+                    @include div(transparent,60px,30px);
+                    font-size: 12px;
+                    @include flexSet(); 
+                }
+
+                .button{
+                    @include div(transparent,512px,55px);
+                    @include flexSet(row,flex-start,flex-end);
+                }
+                button{
+                    @include div(transparent,160px,55px);
+                    border: 1px solid red;
+                    margin-right: 10px;
+                    color: #ec1611;
+                    font-size:20px;
+                }
+                .bt2{
+                   background-color: #ec1611;
+                   color: white; 
+                }
+            }
+        } 
+    }
+}

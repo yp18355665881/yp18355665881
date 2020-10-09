@@ -1,0 +1,48 @@
+#content{
+    .main{
+        @include div(white,980px,507px); 
+        padding: 40px 60px;
+        @include flexSet(row,flex-start,center);
+    }
+    .regisry{
+        @include div(transparent,430px,426px);
+    }
+    .item{
+        @include div(transparent,430px,66px);
+        @include flexSet(row,flex-start,center);
+        position: relative;
+        em{
+            @include div(none,26px,26px); 
+            background: url();
+        }
+        // padding: 15px 0 15px 74px;
+        label{
+            @include div(transparent,74px,36px);
+            @include flexSet(row,flex-end,center);font-size: 14px;
+        }
+        input{
+            padding: 2px 3px;
+            border: 1px solid #ccc;
+            @include div(white,290px,30px);
+            border-radius: 3px;
+        }
+        .select{
+            @include div(white,12.8px,12.8px);
+        }
+        .info{
+            @include div(transparent,290px,33px); 
+            @include flexSet(row,flex-start,center);
+            position: absolute;
+            top: 50px;
+            left: 74px;
+            font-size: 12px;
+            display: none;
+        }
+    }
+    #btn{
+        @include div(red,178px,30px);
+        border: none;
+        color: white;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,21 @@
+#middle{
+    @include div(white,980px,550px);
+    @include flexSet(row,flex-start,flex-start);
+    .left{
+        a{
+            display: block;
+            @include div(white,550px,390px); 
+            @include flexSet(row,flex-end,flex-end); 
+        }
+    }
+    .right{
+        @include div(transparent,340px,330px); 
+        margin: 60px 90px 0 0;
+        padding: 38px 0 0 20px;
+        border: 1px solid #ccc;
+        input{
+            @include div(transparent,240px,40px); 
+            margin: 15px 0 5px 0;
+        }
+    }
+}

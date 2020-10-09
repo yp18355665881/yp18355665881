@@ -1,0 +1,179 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f6f6f6;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  width: 100%;
+  height: 87px;
+  padding-top: 10px;
+}
+#header .main {
+  background-color: transparent;
+  width: 980px;
+  height: 57px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+#header .logo {
+  background-color: transparent;
+  width: 232px;
+  height: 57px;
+  background: url(../img/logo_zhe800_new.png), no-repeat;
+  background-size: 100%;
+}
+#header .header_right {
+  color: #666;
+  font: 12px '';
+  margin-top: 35px;
+}
+
+#middle {
+  background-color: white;
+  width: 980px;
+  height: 550px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+#middle .left a {
+  display: block;
+  background-color: white;
+  width: 550px;
+  height: 390px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+#middle .right {
+  background-color: transparent;
+  width: 340px;
+  height: 330px;
+  margin: 60px 90px 0 0;
+  padding: 38px 0 0 20px;
+  border: 1px solid #ccc;
+}
+#middle .right input {
+  background-color: transparent;
+  width: 240px;
+  height: 40px;
+  margin: 15px 0 5px 0;
+}
+
+#footer {
+  background-color: transparent;
+  width: 100%;
+  height: 480px;
+  border-top: 3px solid red;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+#footer .main {
+  margin-top: 5px;
+  background-color: transparent;
+  width: 1200px;
+  height: 480px;
+}
+#footer .main img {
+  background-color: transparent;
+  width: 100%;
+  height: 480px;
+}
+
+#right_nav {
+  background-color: black;
+  width: 34px;
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 10000;
+}
+#right_nav .gwc {
+  background-color: transparent;
+  width: 34px;
+  height: 133px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 28px !important;
+  padding: 0 10px;
+  color: white;
+}
+#right_nav .right {
+  position: absolute;
+  left: 0;
+  font-size: 12px;
+}
+#right_nav .size {
+  background-color: red;
+  width: 34px;
+  height: 42px;
+}
+#right_nav .dd {
+  top: 161px;
+  background: url(http://z5.tuanimg.com/v2/core/img/side_golds.png) no-repeat 6px -188px;
+}
+#right_nav .yh {
+  top: 203px;
+  background: url(//z5.tuanimg.com/v2/core/img/quan_iconnew.png) no-repeat 7px 0;
+}
+#right_nav .sc {
+  top: 245px;
+  background: url(//z5.tuanimg.com/v2/core/img/myFavorites.png) no-repeat 1px 0;
+}
+#right_nav .xx {
+  top: 287px;
+}
+#right_nav .lq {
+  bottom: 210px;
+}
+#right_nav .pp {
+  bottom: 168px;
+}
+#right_nav .sys {
+  bottom: 126px;
+}
+#right_nav .wt {
+  bottom: 84px;
+}
+#right_nav .fk {
+  bottom: 42px;
+}
+#right_nav .top {
+  bottom: 0px;
+}
+
+/*# sourceMappingURL=login.css.map */

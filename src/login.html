@@ -5,10 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./css/login.css">
 </head>
 
 <body>
-    这里就是首页
+    <div class="container">
+        <div id="header">
+            <div class="main">
+                <a href="#" class="logo"></a>
+                <span class="header_right">还没有账号？
+                    <a href="registry.html">立即注册</a>
+                </span>
+            </div>
+        </div>
+        <div id="middle">
+            <div class="left">
+                <a href="#">
+                    <img src="http://d1.tuanimg.com/upload/dynamic_banner/image/403/130f4b3f21b106ab11a8c5b43eeb5cd4.jpg" alt="">
+                </a>
+            </div>
+            <div class="right">
+                <form action="#" method="post">
+                    <input type="text" placeholder="用户名/手机号" name="username" class="username">
+                    <input type="password" placeholder="请输入密码" name="password" class="password">
+                    <input type="button" value="登录" class="btn">
+                </form>
+                
+            </div>
+        </div>
+    </div>
 </body>
-
+<script src="./script/jquery.js"></script>
+<script src="./script/sha1.js"></script>
+<script src="./script/login.js"></script>
 </html>

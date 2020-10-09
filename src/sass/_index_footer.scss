@@ -1,45 +1,63 @@
 @charset "utf-8";
 
-.about{
-    @include flexSet();
-    @include div(red,100%,298px);
-}
+// .about{
+//     @include flexSet();
+//     @include div(transparent,100%,298px);
+// }
 
-.yqlj{
-    @include flexSet();
-    @include div(gold,100%,40px)
-}
+// .yqlj{
+//     @include flexSet();
+//     @include div(transparent,100%,40px)
+// }
 
-.footer{
+#footer{
+    @include div(transparent,100%,480px);
+    border-top: 3px solid red;
     @include flexSet();
-    @include div(green,100%,140px)
+    .main{
+        margin-top: 5px;
+        @include div(transparent,1200px,480px);
+        img{
+            @include div(transparent,100%,480px);
+        }
+    }
+    
 }
 
 #right_nav{
-    @include div(gold,34px,100%) ;
+    @include div(black,34px,100%) ;
     position:fixed;
     right: 0;
     top: 0;
     z-index: 10000;
+    
     .gwc{
-        @include div(red,34px,133px);
+        @include div(transparent,34px,133px);
+        @include flexSet(column,center,center);
         top: 28px !important;
+        padding: 0 10px;
+        color: white;
     }
     .right{
         position: absolute;
         left: 0;
+        font-size: 12px;
     }
     .size{
         @include div(red,34px,42px);
+        
     }
     .dd{
         top: 161px;
+        background: url(http://z5.tuanimg.com/v2/core/img/side_golds.png)no-repeat 6px -188px;
     }
     .yh{
         top: 203px;
+        background: url(//z5.tuanimg.com/v2/core/img/quan_iconnew.png) no-repeat 7px 0
     }
     .sc{
         top: 245px;
+        background: url(//z5.tuanimg.com/v2/core/img/myFavorites.png) no-repeat 1px 0
     }
     .xx{
         top:287px;
